@@ -1,0 +1,41 @@
+<!-- activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText to input the amount for conversion -->
+    <EditText
+        android:id="@+id/fromAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner to select the source currency -->
+    <Spinner
+        android:id="@+id/fromCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText to display the converted amount -->
+    <EditText
+        android:id="@+id/toAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Converted amount"
+        android:inputType="none"
+        android:enabled="false"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Spinner to select the target currency -->
+    <Spinner
+        android:id="@+id/toCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
